@@ -107,7 +107,7 @@ nav a:nth-of-type(4):hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-section:first-of-type h3:first-of-type {
+.layout h3 {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     font-family: "Barlow Outline Regular";
@@ -127,21 +127,21 @@ section:first-of-type h3:first-of-type {
     
 }
 
-main section:first-of-type img:nth-of-type(2) {
+.bottom-image {
     z-index: auto;
-    height: 33vw;
-    width: 33vw;
+    height: 32.8vw;
+    width: 32.8vw;
     grid-row: 1 / 12;
     grid-column: 3 / 6;
     border-top-right-radius: 1.5vw;
     border-top-left-radius: 1.5vw;
 }
 
-main section:first-of-type img:first-of-type {
+.top-image {
     z-index: 1;
     transition: opacity 1s;
-    height: 33vw;
-    width: 33vw;
+    height: 32.8vw;
+    width: 32.8vw;
     grid-row: 1 / 12;
     grid-column: 3 / 6;
     border-top-right-radius: 1.5vw;
@@ -152,7 +152,11 @@ main section:first-of-type img:first-of-type:hover {
     opacity: 0;
 }
 
-main section:first-of-type ol:first-of-type {
+
+
+
+
+.song-list {
     grid-row: 13;
     grid-column: 3 / 4;
     background-color: pink;
@@ -162,7 +166,7 @@ main section:first-of-type ol:first-of-type {
     font-family: "Barlow Condensed Light";
 }
 
-main section:first-of-type ol:nth-of-type(2) {
+.singer-list {
     grid-row: 13;
     grid-column: 5 / 6;
     background-color: rgb(255, 172, 255);
@@ -172,75 +176,65 @@ main section:first-of-type ol:nth-of-type(2) {
     font-family: "Barlow Condensed Light";
 }
 
-main section:first-of-type h4:nth-of-type(3) {
+main .layout h4:nth-of-type(3) {
     grid-row: 12;
     grid-column: 5;
     background: rgb(255, 172, 255);
     padding: 1vw 0 0 1.5vw;
     font-family: "Barlow Semi Condensed Semi Bold";
     font-weight: normal;
+    font-size: 1.5vw;
 }
 
-main section:first-of-type h4:nth-of-type(2) {
+main .layout h4:nth-of-type(2) {
     grid-row: 12;
     grid-column: 3;
     background: pink;
     padding: 1vw 0 0 1.5vw;
     font-family: "Barlow Semi Condensed Semi Bold";
     font-weight: normal;
+    font-size: 1.5vw;
 }
 
-main section:first-of-type h4:first-of-type {
+main .layout h4:first-of-type {
     grid-row: 2 / 3;
     font-family: "Barlow Semi Condensed Semi Bold";
     font-size: 2vw;
 }
 
-main section:first-of-type p:first-of-type {
+main .layout p:first-of-type {
     grid-row: 4 / 5;
     align-self: end;
 }
 
-main section:first-of-type p:nth-of-type(2) {
+main .layout p:nth-of-type(2) {
+    padding-left: 3vw;
+    align-self: center;
     grid-row: 5 / 6;
 }
 
-main section:first-of-type p {
-    font-family: "Barlow Condensed Light";
-}
-
-main section:first-of-type p:nth-of-type(3) {
+main .layout p:nth-of-type(3) {
+    padding-left: 3vw;
+    align-self: center;
     grid-row: 6 / 7;
 }
 
-main section:first-of-type p:nth-of-type(4) {
+main .layout p:nth-of-type(4) {
+    padding-left: 3vw;
+    align-self: center;
     grid-row: 7 / 8;
-}
-
-main section:first-of-type p:nth-of-type(2) {
-    padding-left: 3vw;
-    align-self: center;
-}
-
-main section:first-of-type p:nth-of-type(3) {
-    padding-left: 3vw;
-    align-self: center;
-}
-
-main section:first-of-type p:nth-of-type(4) {
-    padding-left: 3vw;
-    align-self: center;
 }
 
 h4, h3, ol, li, p, h1, header {
     color: white;
 }
 
-main section:first-of-type p {
+main .layout p {
     font-size: 1.4vw;
+    font-family: "Barlow Condensed Light";
 }
 
-main section:first-of-type p:nth-of-type(5) {
+main .layout p:nth-of-type(5) {
     grid-row: 9 / 10;
 }
 
