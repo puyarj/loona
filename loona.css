@@ -78,7 +78,7 @@ nav a {
     text-decoration: none;
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 0.7vw;
+    border-radius: 8px;
     margin: 6vw 0 0 0;
     padding: 1.3vw 0;
     font-family: "Barlow Condensed Light";
@@ -156,7 +156,7 @@ main .layout img:first-of-type:hover {
     grid-column: 3 / 4;
     background-color: pink;
     border-bottom-left-radius: 20px;
-    padding-left: 2.5vw;
+    padding-left: 2.7vw;
     font-size: 1.3vw;
     font-family: "Barlow Condensed Light";
 }
@@ -166,7 +166,7 @@ main .layout img:first-of-type:hover {
     grid-column: 5 / 6;
     background-color: rgb(255, 172, 255);
     border-bottom-right-radius: 20px;
-    padding-left: 2.5vw;
+    padding-left: 2.7vw;
     font-size: 1.3vw;
     font-family: "Barlow Condensed Light";
 }
@@ -175,7 +175,7 @@ main .layout h4:nth-of-type(3) {
     grid-row: 13;
     grid-column: 5;
     background: rgb(255, 172, 255);
-    padding: 1vw 0 0 1.5vw;
+    padding: 0.7vw 0 0 1.5vw;
     font-family: "Barlow Condensed Light";
     font-size: 1.5vw;
 }
@@ -184,7 +184,7 @@ main .layout h4:nth-of-type(2) {
     grid-row: 13;
     grid-column: 3;
     background: pink;
-    padding: 1vw 0 0 1.5vw;
+    padding: 0.7vw 0 0 1.5vw;
     font-family: "Barlow Condensed Light";
     font-size: 1.5vw;
 }
@@ -347,6 +347,35 @@ main > p {
         font-size: 25px;
     }
 
+    main .layout h4:first-of-type {
+        font-size: 17px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 15px 0;
+    }
+
+    header {
+        font-size: 54px;
+    }
+
+    main .layout p {
+        font-size: 12px;
+    }
+
+    main > p {
+        font-size: 12px;
+    }
+
+    main .layout h4:nth-of-type(2), main .layout h4:nth-of-type(3) {
+        font-size: 15px;
+    }
+
+    .singer-list, .song-list {
+        font-size: 12px;
+    }
+
     .top-image, .layout > img:last-of-type {
         width: calc(32vw + 10px);
         height: calc(32vw + 10px);
@@ -367,9 +396,48 @@ main > p {
         font-size: 2.8vw;
     }
 
+    header {
+        padding: 14px 0 0 18px;
+    }
+
+    nav a:first-child {
+        margin-left: 15px;
+    }
+
+    nav a:last-child {
+        margin-right: 15px;
+    }
+
+    main .layout h4:first-of-type {
+        font-size: 1.9vw;
+    }
+
+    nav a {
+        font-size: 1.8vw;
+        padding: 15px 0;
+    }
+
+    main .layout p {
+        font-size: 1.35vw;
+    }
+
+    main > p {
+        font-size: 1.35vw;
+        padding: 60px 0 10px 15px;
+    }
+
+    main .layout h4:nth-of-type(2), main .layout h4:nth-of-type(3) {
+        font-size: 1.7vw;
+    }
+
     .layout {
         grid-template-rows: repeat(3, 3vw) repeat(4, 2vw) 4vw 8vw 3vw 1vw 1vw 3vw 100px 1vw 150px;
         grid-template-columns: 1fr 1vw 16vw 1vw 16vw;
+        margin: 5vw 15px 0 15px;
+    }
+
+    .layout:last-of-type {
+        margin: 15px 15px 0 15px;
     }
 
     .top-image, .layout > img:last-of-type {
@@ -387,9 +455,50 @@ main > p {
         font-size: 33.5px;
     }
 
+    header {
+        font-size: 72px;
+        padding: 14px 0 0 18px;
+    }
+
+    nav a:first-child {
+        margin-left: 15px;
+    }
+
+    nav a:last-child {
+        margin-right: 15px;
+    }
+
+    nav a {
+        font-size: 21.5px;
+        padding: 15px 0;
+    }
+
+    main .layout h4:first-of-type {
+        font-size: 23px;
+    }
+
+    main .layout p {
+        font-size: 16px;
+    }
+
+    main > p {
+        font-size: 16px;
+        padding: 60px 0 10px 15px;
+    }
+
+    .singer-list, .song-list {
+        font-size: 15px;
+        padding-left: 33px;
+    }
+
+    main .layout h4:nth-of-type(2), main .layout h4:nth-of-type(3) {
+        font-size: 20px;
+        padding: 8px 0 0 19px;
+    }
+
     .top-image, .layout > img:last-of-type {
-        width: 397px;
-        height: 397px;
+        width: 398px;
+        height: 398px;
     }
 
     main {
@@ -397,8 +506,14 @@ main > p {
     }
 
     .layout {
-        grid-template-rows: repeat(3, 36px) repeat(4, 24.25px) 48px 97px 35px 12px 12px 35px 100px 11px 150px;
+        grid-template-rows: repeat(3, 36px) repeat(4, 24.25px) 48px 97px 35px 12px 12px 35px 100px 12px 150px;
         grid-template-columns: 1fr 12px 193px 12px 193px;
+        padding: 19px;
+        margin: 58px 15px 0 15px;
+    }
+
+    .layout:last-of-type {
+        margin: 15px 15px 0 15px;
     }
 
     .under-section {
@@ -406,3 +521,139 @@ main > p {
     }
 }
 
+@media (max-width: 500px) {
+    main {
+        background-color: transparent;
+        margin: 0;
+    }
+
+    body {
+        background-image: url(./oiiha3xbws371.webp);
+    }
+
+    header {
+        font-size: 15vw;
+        padding: 0;
+        text-align: center;
+        margin-top: 1.5vw;
+    }
+
+    nav {
+        gap: 1vw;
+    }
+
+    nav a {
+        margin: 14vw 0 14vw 0;
+        padding: 3vw 0 3vw 0;
+        font-size: 3vw;
+        border-radius: 10px;
+    }
+
+    nav a:first-child {
+        margin-left: 0;
+    }
+
+    nav a:last-child {
+        margin-right: 0;
+    }
+
+    .layout {
+        margin: 0;
+        grid-template-columns: 42vw 2vw 42vw;
+        grid-template-rows: 86vw 2vw 10vw 30vw 4vw 8vw 6vw 12vw repeat(4, 5vw) 12vw;
+        padding: 3vw;
+        border-radius: 20px;
+    }
+
+    .top-image {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        height: 86vw;
+        width: 86vw;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .layout > img:last-of-type {
+        grid-row: 1;
+        grid-column: 1 / 3;
+        height: 86vw;
+        width: 86vw;
+        border-radius: 20px 0 0 20px;
+    }
+
+    main .layout h4:nth-of-type(2) {
+        grid-column: 1;
+        grid-row: 3;
+        font-size: 5vw;
+        padding: 0 0 1.5vw 3vw;
+        display: flex;
+        align-items: end;
+    }
+
+    .song-list {
+        grid-column: 1;
+        grid-row: 4;
+        font-size: 4vw;
+        padding-left: 6vw;
+    }
+
+    main .layout h4:nth-of-type(3) {
+        grid-column: 3;
+        grid-row: 3;
+        font-size: 5vw;
+        padding: 0 0 1.5vw 3vw;
+        display: flex;
+        align-items: end;
+    }
+
+    .singer-list {
+        grid-column: 3;
+        grid-row: 4;
+        font-size: 4vw;
+        padding-left: 6vw;
+    }
+
+    .layout h3 {
+        grid-row: 6;
+        font-size: 7vw;
+    }
+
+    main .layout h4:first-of-type {
+        grid-row: 7;
+        font-size: 4.5vw;
+    }
+
+    main .layout p:first-of-type {
+        grid-row: 9;
+        align-self: end;
+        font-size: 4vw;
+    }
+
+    main .layout p:nth-of-type(2) {
+        padding-left: 7vw;
+        align-self: center;
+        grid-row: 10;
+        grid-column: 1 / 4;
+        font-size: 4vw;
+    }
+
+    main .layout p:nth-of-type(3) {
+        padding-left: 7vw;
+        align-self: center;
+        grid-row: 11;
+        grid-column: 1 / 4;
+        font-size: 4vw;
+    }
+
+    main .layout p:nth-of-type(4) {
+        padding-left: 7vw;
+        align-self: center;
+        grid-row: 12;
+        grid-column: 1 / 4;
+        font-size: 4vw;
+    }
+
+    h1, .under-section, .layout:last-of-type {
+        display: none;
+    }
+}
